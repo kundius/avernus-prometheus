@@ -1,0 +1,255 @@
+@import "responsive";
+
+.s-about {
+  overflow: hidden;
+  padding-top: 58px;
+  padding-bottom: 64px;
+  background: url("../images/s-about-bg-desktop.jpg") no-repeat 50% 50%;
+  background-size: cover;
+
+  @include tablet {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    background-image: url("../images/s-about-bg-tablet.jpg");
+  }
+
+  @include mobile {
+    padding-top: 22px;
+    padding-bottom: 28px;
+    background-image: url("../images/s-about-bg-mobile.jpg");
+  }
+}
+
+.s-about__title {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(175, 105, 38);
+  background-image: linear-gradient(107deg, #9e5d1d, #e0963f, #a35e22);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 50px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.s-about__desc {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 50px;
+
+  @include desktop {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 680px;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.s-about__desc strong {
+  color: #d0862f;
+  font-weight: 500;
+}
+
+.s-about__content {
+  width: calc(50% + 22px);
+  margin-left: auto;
+  position: relative;
+
+  @include tablet {
+    width: calc(50% + 2px);
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-top: 404px;
+    padding-left: 36px;
+  }
+}
+
+.s-about__content::before {
+  content: "";
+  background: url("../images/s-about-image.png") no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 439px;
+  height: 623px;
+  top: 50%;
+  left: 0;
+  margin-left: -536px;
+  margin-top: -224px;
+
+  @include tablet {
+    width: calc(439px * 0.685);
+    height: calc(623px * 0.685);
+    margin-left: -355px;
+    margin-top: -208px;
+  }
+
+  @include mobile {
+    width: calc(439px * 0.6);
+    height: calc(623px * 0.6);
+    margin-left: 0;
+    margin-top: -384px;
+    top: 0;
+    left: 50%;
+    margin-left: calc(-220px * 0.6);
+  }
+}
+
+.s-about__content-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #d89c57;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+.s-about__content-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #bbb;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+    gap: 22px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 18px;
+    gap: 18px;
+  }
+}
+
+.s-about__content-list strong {
+  color: #d89c57;
+  font-weight: 500;
+}
+
+.s-about__content-list li {
+  position: relative;
+  z-index: 1;
+}
+
+.s-about__content-list li::before {
+  content: "";
+  position: relative;
+  background: url("../images/check-mark.png") no-repeat 50% 50%;
+  background-size: cover;
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  left: -40px;
+  top: -5px;
+  z-index: -1;
+
+  @include tablet {
+    left: -44px;
+    top: 0px;
+  }
+
+  @include mobile {
+    left: -26px;
+    top: 0px;
+    width: 21px;
+    height: 20px;
+  }
+}
+
+.s-about__content-list li::after {
+  content: "";
+  left: -10px;
+  top: -5px;
+  right: -10px;
+  bottom: -5px;
+  border-radius: 10px;
+  background-color: rgb(65, 47, 26);
+  opacity: 0.38;
+  position: absolute;
+  z-index: -1;
+
+  @include mobile {
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+  }
+}
+
+.s-about__note {
+  font-size: 20px;
+  line-height: 24px;
+  color: #bbb;
+  font-style: italic;
+  margin-top: 62px;
+  width: calc(50% + 22px);
+  margin-left: auto;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: auto;
+    width: 480px;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 32px;
+    width: 100%;
+    margin-left: 0;
+  }
+}

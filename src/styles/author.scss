@@ -1,0 +1,134 @@
+@import "responsive";
+
+.section-author {
+  background-image: url("../images/s-author-bg-desktop.jpg");
+  background-color: #010408;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: auto 100%;
+  padding: 71px 0 41px;
+
+  @include tablet {
+    padding: 32px 0 10px;
+    background: #0b0e13 url("../images/section-author-bg-tablet.jpg") no-repeat
+      50% 0;
+  }
+
+  @include mobile {
+    padding-top: 29px;
+    padding-bottom: 39px;
+    background: #01060c url("../images/section-author-bg-mobile.jpg") no-repeat
+      50% 0;
+  }
+}
+
+.section-author__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 80px;
+
+  @include tablet {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.section-author__title span {
+  display: block;
+  color: #bf772f;
+  font-size: 24px;
+
+  @include mobile {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+}
+
+.section-author__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: section;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    margin: 0 auto;
+  }
+}
+
+.section-author__items li {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  margin: 40px 0;
+  padding: 13px 0 16px 86px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include tablet {
+    margin: 26px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  @include mobile {
+    margin: 10px 0;
+    padding: 3px 0 5px 45px;
+  }
+
+  &::before {
+    counter-increment: section;
+    content: counter(section);
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.34);
+    background-color: #bf772f;
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 34px;
+    text-transform: uppercase;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include mobile {
+      font-size: 18px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      left: 6px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #bf772f;
+    position: absolute;
+    left: 58px;
+    top: 0;
+    bottom: 0;
+
+    @include mobile {
+      left: 37px;
+    }
+  }
+}

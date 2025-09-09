@@ -1,0 +1,407 @@
+.s-program {
+  padding-top: 58px;
+  padding-bottom: 68px;
+  background: #110b0a url("../images/s-program-bg-desktop.jpg") no-repeat 50% 0;
+  background-size: cover;
+
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 36px;
+    background-image: url("../images/s-program-bg-tablet.jpg");
+  }
+
+  @include mobile {
+    padding-top: 22px;
+    padding-bottom: 36px;
+    background-image: url("../images/s-program-bg-mobile.jpg");
+  }
+}
+
+.s-program__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 88px;
+  color: #b16711;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 28px;
+  }
+}
+
+.s-program__list {
+}
+
+.s-program__list > * + * {
+  margin-top: 50px;
+
+  @include tablet {
+    margin-top: 36px;
+  }
+}
+
+.s-program__desc {
+  font-size: 24px;
+  margin-top: 54px;
+  text-align: center;
+  line-height: 30px;
+
+  @include desktop {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 18px;
+  }
+}
+
+.s-program__desc strong {
+  color: #aa6723;
+  font-weight: 500;
+}
+
+.program-card {
+  position: relative;
+}
+
+.program-card__step {
+  position: absolute;
+  left: -3px;
+  top: -32px;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    -39deg,
+    rgb(224, 188, 84) 0%,
+    rgb(250, 242, 222) 0%,
+    rgb(158, 93, 29) 0%,
+    rgb(158, 93, 29) 0%,
+    rgb(224, 150, 63) 50%,
+    rgb(163, 94, 34) 100%
+  );
+  position: absolute;
+  width: 103px;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    width: 79px;
+    height: 79px;
+    left: -3px;
+    top: -24px;
+  }
+
+  @include mobile {
+    width: 60px;
+    height: 60px;
+    left: -2px;
+    top: -19px;
+  }
+}
+
+.program-card__step-num {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 3px;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include mobile {
+    font-size: 27px;
+  }
+}
+
+.program-card__step-label {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    font-size: 10px;
+  }
+}
+
+.program-card__title {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #c47011;
+  margin-left: 110px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 24px;
+    margin-left: 84px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    margin-left: 64px;
+    margin-bottom: 14px;
+  }
+}
+
+.program-card__body {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3.936px 4.528px 5.64px 0.36px rgba(0, 2, 1, 0.3);
+
+  @include mobile {
+    flex-direction: column;
+    padding: 14px 10px 10px;
+    gap: 20px;
+  }
+}
+
+.program-card__image {
+  width: 350px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+
+  @include tablet {
+    width: 240px;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+.program-card_1 .program-card__image {
+  background: url("../images/s-program-image-1.jpg") no-repeat 50% 0;
+  background-size: cover;
+}
+
+.program-card_2 .program-card__image {
+  background: url("../images/s-program-image-2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.program-card_3 .program-card__image {
+  background: url("../images/s-program-image-3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.program-card_4 .program-card__image {
+  background: url("../images/s-program-image-4.jpg") no-repeat 50% 0;
+  background-size: cover;
+}
+
+.program-card__content {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.program-card__content-main {
+  font-size: 18px;
+  line-height: 24px;
+  color: #13100c;
+  font-weight: 500;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.program-card__content-listing {
+}
+
+* + .program-card__content-listing {
+  margin-top: 24px;
+
+  @include tablet {
+    margin-top: 18px;
+  }
+
+  @include mobile {
+    margin-top: 18px;
+  }
+}
+
+.program-card__content-important {
+  font-size: 18px;
+  line-height: 24px;
+  color: #13100c;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.program-card__content-important::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -12px;
+  top: -12px;
+  bottom: -12px;
+  right: -12px;
+  background-color: rgb(245, 184, 111);
+  border-radius: 10px;
+
+  @include tablet {
+    left: -8px;
+    top: -8px;
+    bottom: -8px;
+    right: -8px;
+  }
+
+  @include mobile {
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+  }
+}
+
+* + .program-card__content-important {
+  margin-top: 24px;
+
+  @include tablet {
+    margin-top: 18px;
+  }
+
+  @include mobile {
+    margin-top: 18px;
+  }
+}
+
+.program-card__listing {
+}
+
+.program-card__listing-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #8f5b1e;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.program-card__listing-list {
+  font-size: 18px;
+  line-height: 24px;
+  color: #13100c;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.program-card__listing-list li {
+  position: relative;
+  padding-left: 16px;
+
+  @include tablet {
+    padding-left: 12px;
+  }
+
+  @include mobile {
+    padding-left: 12px;
+  }
+}
+
+.program-card__listing-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #8f5b1e;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  margin-top: -3px;
+
+  @include tablet {
+    top: 9px;
+  }
+
+  @include mobile {
+    top: 9px;
+  }
+}

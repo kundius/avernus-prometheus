@@ -1,0 +1,117 @@
+.s-impact {
+  padding-top: 56px;
+  padding-bottom: 82px;
+  background: #110b0a url("../images/s-impact-bg-desktop.jpg") no-repeat 50% 50%;
+  background-size: cover;
+
+  @include tablet {
+    background-image: url("../images/s-impact-bg-tablet.jpg");
+    padding-top: 34px;
+    padding-bottom: 44px;
+  }
+
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 32px;
+    background-image: url("../images/s-impact-bg-mobile.jpg");
+  }
+}
+
+.s-impact__title {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b16711;
+  font-weight: 500;
+  margin-bottom: 68px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 56px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.s-impact__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 54px;
+
+  @include mobile {
+    row-gap: 38px;
+  }
+}
+
+.s-impact__list > * {
+  width: calc(100% / 3 - 32px / 3);
+
+  @include tablet {
+    width: calc(100% / 2 - 16px / 2);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.impact-card {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3.936px 4.528px 5.64px 0.36px rgba(0, 2, 1, 0.3);
+  padding: 16px;
+}
+
+.impact-card__image {
+  margin-top: -48px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgb(210, 156, 100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 6px;
+
+  @include mobile {
+    width: 56px;
+    height: 56px;
+    margin-top: -45px;
+  }
+}
+
+.impact-card__title {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 500;
+  color: #aa6723;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.impact-card__desc {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #13100c;
+  margin-top: 10px;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Клуб «Код Прометея»</title>
+    <link href="dist/styles/bundle.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Клуб «Код Прометея»" />
+    <meta
+      property="og:description"
+      content="Пробуждайте внутренний огонь, раскрывайте свою миссию и объединяйтесь с единомышленниками"
+    />
+    <meta property="og:image" content="dist/images/mentor.png" />
+  </head>
+
+  <body>
+    <script>
+      function getNominalWidth() {
+        const width = window.innerWidth;
+        if (width < 767) {
+          return 360;
+        }
+        if (width >= 768 && width < 1231) {
+          return 768;
+        }
+        if (width >= 1232) {
+          return 1800;
+        }
+      }
+
+      function updateZoom() {
+        const nominalWidth = getNominalWidth();
+        const currentWidth = window.innerWidth;
+        const zoomFactor = currentWidth / nominalWidth;
+        document.documentElement.style.zoom =
+          Math.round(zoomFactor * 100) / 100;
+      }
+
+      updateZoom();
+
+      window.addEventListener("resize", updateZoom);
+    </script>
+
+    <div class="page">
+      <section class="s-header" id="header">
+        <div class="ui-container">
+          <div class="s-header__content">
+            <div class="s-header__title">Клуб «Код&nbsp;Прометея»</div>
+            <div class="s-header__desc">
+              Пробуждайте внутренний огонь, раскрывайте свою миссию<br />
+              и объединяйтесь с единомышленниками
+            </div>
+            <div class="s-header__date">Старт 8 октября</div>
+          </div>
+        </div>
+        <div class="s-header__menu">
+          <div class="s-header__menu-nav">
+            <div class="ui-container">
+              <ul>
+                <li>
+                  <a href="#header" data-scroll="#header">О клубе</a>
+                </li>
+                <li>
+                  <a href="#about" data-scroll="#about">Для кого</a>
+                </li>
+                <li>
+                  <a href="#program" data-scroll="#program">Программа</a>
+                </li>
+                <li>
+                  <a href="#format" data-scroll="#format">Формат</a>
+                </li>
+                <li>
+                  <a href="#impact" data-scroll="#impact">Что вы получите</a>
+                </li>
+                <li>
+                  <a href="#order" data-scroll="#order">Присоединиться</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="s-header__menu-toggle" type="button">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="s-about" id="about">
+        <div class="ui-container">
+          <div class="s-about__title">Для кого этот клуб</div>
+          <div class="s-about__desc">
+            <strong>«Код Прометея»</strong> - это сообщество людей, стремящихся
+            раскрыть свой паранояльный радикал, найти свою большую миссию и
+            построить систему, способную менять мир.
+          </div>
+          <div class="s-about__content">
+            <div class="s-about__content-title">Вы здесь, если:</div>
+            <ul class="s-about__content-list">
+              <li>
+                <strong>
+                  Ощущаете несоответствие между внутренним потенциалом и текущей
+                  реальностью.
+                </strong>
+                Чувствуете, что способны на большее, но вынуждены тратить силы
+                на рутину.
+              </li>
+              <li>
+                <strong>Ищете миссию,</strong> ради которой стоит просыпаться, а
+                не просто зарабатывать деньги или делать карьеру.
+              </li>
+              <li>
+                <strong>Хотите понять, в чем ваша главная суперсила</strong> и
+                как с ее помощью изменить общество.
+              </li>
+              <li>
+                <strong>
+                  Стремитесь перестать встраиваться в чужие системы и создать
+                  собственную
+                </strong>
+                - проект, методику, организацию, движение.
+              </li>
+              <li>
+                <strong>Нуждаетесь в окружении,</strong> которое вдохновляет и
+                усиливает.
+              </li>
+            </ul>
+          </div>
+          <div class="s-about__note">
+            Клуб не подходит тем, кто доволен текущим масштабом или намерен
+            развиваться исключительно ради денег. Здесь обучают не
+            бизнес-процессам, а построению собственной&nbsp;идеологии.
+          </div>
+        </div>
+      </section>
+
+      <section class="s-program" id="program">
+        <div class="ui-container">
+          <div class="s-program__title">Программа клуба</div>
+          <div class="s-program__list">
+            <div class="program-card program-card_1">
+              <div class="program-card__step">
+                <div class="program-card__step-num">1</div>
+                <div class="program-card__step-label">этап</div>
+              </div>
+              <div class="program-card__title">Пробуждение</div>
+              <div class="program-card__body">
+                <div class="program-card__content">
+                  <div class="program-card__content-main">
+                    На первом этапе вы исследуете, в чём ваша подлинная природа,
+                    какие образы, желания и силы в вас жили до того, как вы
+                    начали их прятать. Вы раскрываете:
+                  </div>
+
+                  <div class="program-card__content-listing">
+                    <div class="program-card__listing">
+                      <div class="program-card__listing-title">
+                        Вы раскрываете:
+                      </div>
+                      <ul class="program-card__listing-list">
+                        <li>
+                          Свою миссию, но не абстрактный лозунг, а живой ответ
+                          на боль мира, которая действительно трогает вас.
+                        </li>
+                        <li>
+                          Подавленные таланты, забытые источники силы и
+                          внутренние опоры.
+                        </li>
+                        <li>
+                          Негативные установки, которые мешают идти вперёд. Но
+                          вместо борьбы с собой фокус на том, что даёт энергию.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="program-card__content-important">
+                    В результате этого этапа формируется ваше Большое Видение -
+                    миссия, которая рождается изнутри и даёт энергию, а не
+                    забирает её. Вы не просто понимаете, «кем быть», а
+                    чувствуете, зачем вы здесь и куда зовёт вас ваша сила.
+                  </div>
+                </div>
+                <div class="program-card__image"></div>
+              </div>
+            </div>
+
+            <div class="program-card program-card_2">
+              <div class="program-card__step">
+                <div class="program-card__step-num">2</div>
+                <div class="program-card__step-label">этап</div>
+              </div>
+              <div class="program-card__title">Стратегия</div>
+              <div class="program-card__body">
+                <div class="program-card__content">
+                  <div class="program-card__content-main">
+                    Теперь, когда вы знаете, куда идёте, пора проложить дорогу.
+                    Вы строите стратегию не «с нуля», а от будущего к
+                    настоящему. От точки Б, где уже реализована ваша миссия, к
+                    сегодняшнему дню.
+                  </div>
+
+                  <div class="program-card__content-listing">
+                    <div class="program-card__listing">
+                      <div class="program-card__listing-title">
+                        На этом этапе вы:
+                      </div>
+                      <ul class="program-card__listing-list">
+                        <li>
+                          Разбиваете большой стратегический план на
+                          последовательность конкретных шагов.
+                        </li>
+                        <li>
+                          Выявляете для каждого этапа вашей стратегии
+                          необходимые ресурсы, навыки, связи и компетенции.
+                        </li>
+                        <li>
+                          Отслеживаете тормозящие убеждения и превращаете их в
+                          поле для практики.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="program-card__content-important">
+                    Ключевой принцип этапа: движение через действия. Вы не
+                    просто планируете, вы действуете, рефлексируете,
+                    прорабатываете сопротивление и корректируете курс. На выходе
+                    вы получаете готовый план реализации миссии и понимаете, как
+                    не останавливаться при первых внутренних или внешних сбоях.
+                  </div>
+                </div>
+                <div class="program-card__image"></div>
+              </div>
+            </div>
+
+            <div class="program-card program-card_3">
+              <div class="program-card__step">
+                <div class="program-card__step-num">3</div>
+                <div class="program-card__step-label">этап</div>
+              </div>
+              <div class="program-card__title">Аудитория</div>
+              <div class="program-card__body">
+                <div class="program-card__content">
+                  <div class="program-card__content-main">
+                    На третьем этапе вы найдете своих людей и построите
+                    собственную смысловую платформу.
+                  </div>
+
+                  <div class="program-card__content-listing">
+                    <div class="program-card__listing">
+                      <div class="program-card__listing-title">
+                        Ваша миссия не живёт в одиночку:
+                      </div>
+                      <ul class="program-card__listing-list">
+                        <li>
+                          Вы находите свою аудиторию, тех, кто откликается на
+                          вашу энергию, боль и мечту.
+                        </li>
+                        <li>
+                          Формулируете образ будущего, в которое эти люди
+                          захотят пойти вместе с вами.
+                        </li>
+                        <li>
+                          Создаёте идею, вызывающую доверие и осваиваете язык,
+                          через который смысл доходит до сердца.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="program-card__content-important">
+                    В результате вы строите фундамент для идеологического
+                    лидерства - когда ваша энергия становится притягательной для
+                    других, а идеи начинают заражать.
+                  </div>
+                </div>
+                <div class="program-card__image"></div>
+              </div>
+            </div>
+
+            <div class="program-card program-card_4">
+              <div class="program-card__step">
+                <div class="program-card__step-num">4</div>
+                <div class="program-card__step-label">этап</div>
+              </div>
+              <div class="program-card__title">Система</div>
+              <div class="program-card__body">
+                <div class="program-card__content">
+                  <div class="program-card__content-main">
+                    Вы приступаете к строительству проекта, команды и живой
+                    системы, несущей вашу миссию. Создаёте структуру, которая
+                    может жить, расти и влиять.
+                  </div>
+
+                  <div class="program-card__content-listing">
+                    <div class="program-card__listing">
+                      <div class="program-card__listing-title">
+                        На этом этапе:
+                      </div>
+                      <ul class="program-card__listing-list">
+                        <li>
+                          Вы запускаете флагманский проект: первый шаг в «Землю
+                          Обетованную».
+                        </li>
+                        <li>
+                          Формируете идеологическую команду людей, которые
+                          разделяют ваше видение и готовы нести его дальше.
+                        </li>
+                        <li>
+                          Учитесь строить систему так, чтобы она усиливала вас и
+                          масштабировала смысл.
+                        </li>
+                        <li>
+                          Развиваете навыки влияния, делегирования и
+                          масштабирования.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="program-card__content-important">
+                    На этом этапе вы выходите за рамки личности, получаете не
+                    просто проект, а собственную экосистему, построенную вокруг
+                    вашей энергии и миссии. Цель не стать незаменимым, а создать
+                    систему, которая будет жить и без вас, усиливая других так
+                    же, как когда-то усилила вас.
+                  </div>
+                </div>
+                <div class="program-card__image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="s-program__desc">
+            <strong>Клуб «Код Прометея»</strong> - это кузница, в&nbsp;котором
+            рождаются личности нового типа. Мы возвращаем людям ощущение
+            масштаба, миссии и&nbsp;опоры&nbsp;на&nbsp;себя.
+          </div>
+        </div>
+      </section>
+
+      <section class="s-format" id="format">
+        <div class="ui-container">
+          <div class="s-format__title">Формат мероприятий</div>
+          <div class="s-format__desc">Старт клуба 8 октября</div>
+          <div class="s-format__list">
+            <div class="s-format__list-1">
+              <div class="format-card">
+                <div class="format-card__label">
+                  <img src="dist/images/s-format-icon-1.png" alt="" />
+                  12 онлайн занятий
+                </div>
+                <div class="format-card__title">
+                  Встречи по четвергам • 19:00 МСК
+                </div>
+                <div class="format-card__desc">
+                  Структурный цикл из четырёх этапов: Освобождение, Стратегия,
+                  Аудитория, Система.
+                </div>
+                <div class="format-card__alt">
+                  Длительность встреч: 1,5 часа
+                </div>
+              </div>
+            </div>
+            <div class="s-format__list-2">
+              <div class="format-card">
+                <div class="format-card__label">
+                  <img src="dist/images/s-format-icon-2.png" alt="" />
+                  Доступ к записям
+                </div>
+                <div class="format-card__title">Смотрите в удобное время</div>
+                <div class="format-card__desc">
+                  Записи встреч и обновления материалов на протяжении программы.
+                </div>
+              </div>
+            </div>
+            <div class="s-format__list-3">
+              <div class="format-card">
+                <div class="format-card__label">
+                  <img src="dist/images/s-format-icon-3.png" alt="" />
+                  Домашние задания
+                </div>
+                <div class="format-card__title">Практика вместо теории</div>
+                <div class="format-card__desc">
+                  Кейсы, упражнения, обратная связь.
+                </div>
+              </div>
+            </div>
+            <div class="s-format__list-4">
+              <div class="format-card">
+                <div class="format-card__label">
+                  <img src="dist/images/s-format-icon-4.png" alt="" />
+                  Закрытый чат
+                </div>
+                <div class="format-card__title">Связь между встречами</div>
+                <div class="format-card__desc">Обмен опытом, поддержка.</div>
+              </div>
+            </div>
+            <div class="s-format__list-5">
+              <div class="format-card">
+                <div class="format-card__label">
+                  <img src="dist/images/s-format-icon-5.png" alt="" />
+                  Единый ритм
+                </div>
+                <div class="format-card__title">Фокус и движение</div>
+                <div class="format-card__desc">
+                  После завершения 3-месячного цикла обучения выбирается новая
+                  тема, связанная с паранояльным лидерством, и клуб продолжает
+                  работу!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-author" id="author">
+        <div class="ui-container">
+          <div class="section-author__title">
+            <span>Ведущий клуба</span>
+            Александр Петров
+          </div>
+          <ul class="section-author__items">
+            <li>
+              Эксперт в&nbsp;области оперативной психологии, в&nbsp;прошлом -
+              подполковник российских спецслужб.
+            </li>
+            <li>
+              За достигнутые успехи в&nbsp;обеспечении безопасности государства
+              неоднократно поощрялся руководством ведомства и&nbsp;региональными
+              органами власти.
+            </li>
+            <li>
+              Награжден медалями за&nbsp;отличие в&nbsp;военной службе
+              III&nbsp;и&nbsp;II степени.
+            </li>
+            <li>
+              С&nbsp;2019 года консультирует бизнес и&nbsp;частных лиц
+              по&nbsp;искусству психодиагностики.
+            </li>
+            <li>
+              Автор методики «Ключи доступа к&nbsp;людям», в&nbsp;которой
+              реализован системный подход к&nbsp;психологической вербовке.
+            </li>
+            <li>
+              Тренер, к&nbsp;которому обращаются для обработки навыков влияния
+              на&nbsp;людей политики, собственники бизнеса и&nbsp;представители
+              силовых структур.
+            </li>
+          </ul>
+          <style>
+            @media (min-width: 767px) {
+              .section-author__items li:nth-child(1) {
+                width: 530px;
+              }
+              .section-author__items li:nth-child(2) {
+                width: 440px;
+              }
+              .section-author__items li:nth-child(3) {
+                width: 400px;
+              }
+              .section-author__items li:nth-child(4) {
+                width: 380px;
+              }
+              .section-author__items li:nth-child(5) {
+                width: 380px;
+              }
+              .section-author__items li:nth-child(6) {
+                width: 420px;
+              }
+            }
+            @media (min-width: 1023px) {
+              .section-author__items li:nth-child(1) {
+                width: 520px;
+              }
+              .section-author__items li:nth-child(2) {
+                width: 560px;
+              }
+              .section-author__items li:nth-child(3) {
+                width: 400px;
+              }
+              .section-author__items li:nth-child(4) {
+                width: 400px;
+              }
+              .section-author__items li:nth-child(5) {
+                width: 480px;
+              }
+              .section-author__items li:nth-child(6) {
+                width: 600px;
+              }
+            }
+          </style>
+        </div>
+      </section>
+
+      <section class="s-impact" id="impact">
+        <div class="ui-container">
+          <div class="s-impact__title">Что вы получите</div>
+          <div class="s-impact__list">
+            <div class="impact-card">
+              <div class="impact-card__image">
+                <img src="dist/images/s-impact-icon-1.png" alt="" />
+              </div>
+              <div class="impact-card__title">Методика и практика</div>
+              <div class="impact-card__desc">
+                Доступ к системе личностной трансформации: лекции, практические
+                задания, Q&A-сессии, записи всех ключевых занятий и постоянно
+                обновляемая база материалов.
+              </div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-card__image">
+                <img src="dist/images/s-impact-icon-2.png" alt="" />
+              </div>
+              <div class="impact-card__title">Сообщество и поддержка</div>
+              <div class="impact-card__desc">
+                Закрытый чат, форум-группа. Пространство, где вы
+                в&nbsp;окружении единомышленников можете обмениваться опытом и
+                получать обратную связь.
+              </div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-card__image">
+                <img src="dist/images/s-impact-icon-3.png" alt="" />
+              </div>
+              <div class="impact-card__title">Индивидуальный путь</div>
+              <div class="impact-card__desc">
+                Персональная траектория роста и поддержка наставника на каждом
+                этапе.
+              </div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-card__image">
+                <img src="dist/images/s-impact-icon-4.png" alt="" />
+              </div>
+              <div class="impact-card__title">Профайлинг</div>
+              <div class="impact-card__desc">
+                Диагностика личности по&nbsp;радикалам. Выявление сильных и
+                слабых сторон, оптимальных ролей и сценариев.
+              </div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-card__image">
+                <img src="dist/images/s-impact-icon-5.png" alt="" />
+              </div>
+              <div class="impact-card__title">Собственная система</div>
+              <div class="impact-card__desc">
+                Разработка и запуск флагманского проекта, комьюнити или движения
+                на основе вашей миссии. Освоение инструментов влияния и вербовки
+                через заражение людей вашим видением.
+              </div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-card__image">
+                <img src="dist/images/s-impact-icon-6.png" alt="" />
+              </div>
+              <div class="impact-card__title">Прорыв и масштаб</div>
+              <div class="impact-card__desc">
+                Выход из профессионального или личного тупика. Поиск проекта и
+                масштаба, соответствующего вашему потенциалу.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-order" id="order">
+        <div class="ui-container">
+          <div class="s-order__title">
+            <span>Хотите вернуть себе масштаб и&nbsp;силу&nbsp;влияния?</span>
+          </div>
+          <div class="s-order__list">
+            <div class="s-order__list-item">
+              <div class="s-order__list-num"></div>
+              <div class="s-order__list-text">
+                Вы понимаете свою миссию и снимаете ограничивающие установки
+              </div>
+            </div>
+            <div class="s-order__list-item">
+              <div class="s-order__list-num"></div>
+              <div class="s-order__list-text">
+                Строите стратегический план, используете профайлинг, чтобы
+                направлять людей и события
+              </div>
+            </div>
+            <div class="s-order__list-item">
+              <div class="s-order__list-num"></div>
+              <div class="s-order__list-text">
+                Создаёте проект, команду и систему, которые живут и растут
+                вместе с вами, усиливая и вас, и тех, кто рядом.
+              </div>
+            </div>
+          </div>
+          <div class="s-order__form">
+            <div class="s-order__form-title">стоимость участия</div>
+            <div class="s-order__form-price">29900 руб</div>
+            <div class="s-order__form-submit">
+              <a href="#" class="ui-button-primary ui-button-primary_glow">
+                Вступить в клуб
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-faq" id="faq">
+        <div class="ui-container">
+          <div class="section-faq__title">
+            <span>Остались вопросы?</span>
+          </div>
+          <div class="section-faq__body">
+            <div class="accordion" data-accordion>
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  Смогу ли я освоить этот курс? Я в этом ничего не понимаю.
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Если вы не знакомы с методикой "7 радикалов" хотя бы на
+                    базовом уровне, рекомендуем вам сперва изучить курс
+                    "Психотипы и искусство влияния на людей", и только после
+                    него переходить к курсу "Психотипы. Уровень мастер".
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  Каким образом я могу произвести оплату?
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p
+                    style="
+                      text-indent: 0;
+                      margin: 21px;
+                      margin-top: 0px;
+                      margin-bottom: 0px;
+                      line-height: 24px;
+                      text-align: left;
+                    "
+                  >
+                    <b>Доступные способы оплаты:</b><br /><br />
+                  </p>
+                  <table
+                    style="
+                      text-indent: 0;
+                      margin: 21px;
+                      margin-top: 0px;
+                      margin-bottom: 0px;
+                      line-height: 24px;
+                      text-align: left;
+                      vertical-align: middle;
+                      border-collapse: separate;
+                      border-spacing: 10px 10px;
+                    "
+                  >
+                    <tbody>
+                      <tr>
+                        <td>Картой VISA, MasterCard</td>
+                        <td width="20"></td>
+                        <td>
+                          <img
+                            src="//avernus.ru/trade/ask/visa-master-card.png"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Платежная система Яндекс.Деньги</td>
+                        <td width="20"></td>
+                        <td>
+                          <img src="//avernus.ru/trade/ask/yandex-money.png" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Платежная система QIWI</td>
+                        <td width="20"></td>
+                        <td><img src="//avernus.ru/trade/ask/qiwi.png" /></td>
+                      </tr>
+                      <tr>
+                        <td>Денежные переводы через системы:</td>
+                        <td width="20"></td>
+                        <td>
+                          <img
+                            src="//avernus.ru/trade/ask/transfer-money.png"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Сбербанк Онлайн</td>
+                        <td width="20"></td>
+                        <td>
+                          <img src="//avernus.ru/trade/ask/sb-online.png" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Перевод на карту Сбербанка</td>
+                        <td width="20"></td>
+                        <td><img src="//avernus.ru/trade/ask/sb.png" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  В каком формате курс и как я его получу?
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Прохождение курса предполагает как изучение записанных
+                    видео-уроков, так и живые онлайн-уроки через платформу Zoom.
+                    Информация по доступу к курсу придет на вашу почту в течение
+                    двух минут после оплаты.
+                  </p>
+                  <p>
+                    Если же у вас не получится присутствовать на практических
+                    занятиях по каким-либо причинам, то вы сможете получить
+                    записи уроков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  Получу ли я сертификат после прохождения курса?
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Да, если вы присутствовали на практических встречах и
+                    выполняли домашние задания, то по окончании курса вы
+                    получите соответствующий сертификат в электронном виде
+                    (форматы участия "Стандартный" и "Профессиональный").
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  Я проживаю за границей. Могу ли я произвести оплату в
+                  национальной валюте?
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Конечно. Выберите способ оплаты с использованием зарубежной
+                    карты. При этом оплату вы будете производить в национальной
+                    валюте, и платежная система самостоятельно конвертирует ее в
+                    рубли по текущему курсу.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  А что делать, если я запишусь на ваш курс, а он мне не
+                  понравится?
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Если на первом занятии вы поймете, что курс вам не подходит,
+                    мы без лишних вопросов вернем деньги.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  Я смогу обратиться, если после прохождения курса у меня
+                  возникнут дополнительные вопросы?
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Автор курса всегда на связи - вы можете задавать ему любые
+                    вопросы, которые у вас появятся в процессе обучения либо
+                    после его завершения.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row" data-accordion-row>
+                <div class="accordion-row__header" data-accordion-header>
+                  Я опасаюсь совершать покупки через Интернет. Вдруг я отправлю
+                  деньги, но ничего не получу.
+                </div>
+                <div class="accordion-row__content" data-accordion-content>
+                  <p>
+                    Александр Петров работает официально, зарегистрирован в
+                    качестве индивидуального предпринимателя.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-faq__button">
+            <button
+              class="ui-button-primary ui-button-primary_dark"
+              data-modal-toggle="#question"
+            >
+              Задать вопрос
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-divider"></div>
+
+      <footer class="footer">
+        <div class="ui-container">
+          <div class="footer-grid">
+            <div class="footer-first-cell">
+              <div class="footer__first">
+                <a href="/" class="footer__logo"
+                  ><img src="dist/images/logo.png" alt=""
+                /></a>
+                <div class="footer__sitename">АКАДЕМИЯ ВЛИЯНИЯ</div>
+                <div class="footer__behalf">"Авернус"</div>
+
+                <div class="footer__copyright">
+                  Все права защищены. Копирование материалов сайта возможно при
+                  указании активной ссылки на источник.
+                </div>
+              </div>
+
+              <a
+                href="http://domenart-studio.ru/"
+                target="_blank"
+                class="footer__creator"
+              >
+                Разработка сайта<br />
+                веб-студия “ДоменАрт”
+              </a>
+            </div>
+
+            <div class="footer-second-cell">
+              <ul class="footer__menu">
+                <li><a href="http://master.avernus.ru">О центре</a></li>
+                <li>
+                  <a href="http://master.avernus.ru/consent"
+                    >Согласие на обработку<br />
+                    персональных данных</a
+                  >
+                </li>
+                <li>
+                  <a href="http://master.avernus.ru/regulation"
+                    >Политика в отношении<br />
+                    обработки персональных данных</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-third-cell">
+              <div class="footer__contacts">
+                Мы в социальных сетях
+                <div class="footer-socials">
+                  <a href="https://vk.com/suggestor" target="_blank">
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="-2.5 0 32 32"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="https://ok.ru/suggestor" target="_blank">
+                    <svg
+                      enable-background="new 0 0 24 24"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"
+                      />
+                      <path
+                        d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/avernuslab/"
+                    target="_blank"
+                  >
+                    <svg
+                      fill="#000000"
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 1920 1920"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <a href="https://t.me/keytosense" target="_blank">
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="https://instagram.com/keytosense" target="_blank">
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                      />
+                      <path
+                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <span>Контакты и поддержка</span>
+                <a href="mailto:support@avernus.ru">support@avernus.ru</a>
+              </div>
+
+              <div class="footer__buttons">
+                <a
+                  href="mailto:support@avernus.ru"
+                  data-modal-toggle="#question"
+                  >Задать вопрос</a
+                >
+                <a href="/login">Вход</a>
+              </div>
+
+              <div class="footer__counters"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal" id="question">
+        <button class="modal__close" data-modal-close></button>
+        <div class="modal__title">
+          Есть вопросы?<br />
+          Напишите нам
+        </div>
+        <div class="modal__body">
+          <form
+            action="/email/question"
+            method="post"
+            class="modal-form"
+            id="faq-form"
+          >
+            <input type="hidden" name="action" value="faq-form" />
+            <input
+              type="hidden"
+              name="subject"
+              value='Вопрос с курса "Психотипы. Уровень эксперт"'
+            />
+            <div class="modal-form__row">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail*"
+                class="ui-input"
+                required
+              />
+            </div>
+            <div class="modal-form__row">
+              <input
+                type="text"
+                name="name"
+                placeholder="Имя"
+                class="ui-input"
+              />
+            </div>
+            <div class="modal-form__row">
+              <textarea
+                name="message"
+                placeholder="Напишите Ваш вопрос"
+                class="ui-textarea"
+                rows="6"
+              ></textarea>
+            </div>
+            <div class="modal-form__row">
+              <input
+                type="text"
+                name="whatsapp"
+                placeholder="Ваш Whatsapp (по желанию)"
+                class="ui-input"
+              />
+            </div>
+            <div class="modal-form__row">
+              <label class="modal-form__approve">
+                <input
+                  type="checkbox"
+                  name="approve"
+                  value="1"
+                  checked
+                  required
+                />
+                <span
+                  >Прочитал(-а) и соглашаюсь с
+                  <a href="/policy" target="_blank"
+                    >политикой конфиденциальности</a
+                  ></span
+                >
+              </label>
+            </div>
+            <div class="modal-form__row">
+              <button
+                class="modal-form__submit ui-button-primary ui-button-primary_dark"
+                type="submit"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal modal_offscreen" id="individual">
+        <button class="modal__close" data-modal-close></button>
+        <div class="modal__title">
+          Заявка на индивидуальное сопровождение по курсу «ПЕРЕГОВОРНАЯ
+          РАЗВЕДКА»
+        </div>
+        <div class="modal__body">
+          <form
+            action="/email/individual"
+            method="post"
+            class="modal-form"
+            id="individual-form"
+          >
+            <input type="hidden" name="action" value="individual-form" />
+            <input
+              type="hidden"
+              name="subject"
+              value="Заявка на индивидуальное сопровождение по курсу «ПЕРЕГОВОРНАЯ РАЗВЕДКА»"
+            />
+            <div class="modal-form__row">
+              <label class="ui-inputgroup">
+                <input
+                  type="text"
+                  name="name"
+                  class="ui-inputgroup__control js-input-classes"
+                />
+                <span class="ui-inputgroup__label"
+                  >Имя<span class="ui-required-badge"></span
+                ></span>
+              </label>
+            </div>
+            <div class="modal-form__row">
+              <label class="ui-inputgroup">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="ui-inputgroup__control js-input-classes js-input-phone"
+                />
+                <span class="ui-inputgroup__label"
+                  >Телефон<span class="ui-required-badge"></span
+                ></span>
+              </label>
+            </div>
+            <div class="modal-form__row">
+              <label class="ui-inputgroup">
+                <select
+                  name="contact"
+                  class="ui-inputgroup__control js-input-classes"
+                  id="contact-field"
+                  onchange="document.getElementById('telegram-field').classList[this.options[this.selectedIndex].value === 'Telegram' ? 'remove' : 'add']('hidden')"
+                >
+                  <option value=""></option>
+                  <option value="Звонок">Звонок</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                  <option value="Telegram">Telegram</option>
+                </select>
+                <span class="ui-inputgroup__label"
+                  >Как удобно будет с Вами связаться?<span
+                    class="ui-required-badge"
+                  ></span
+                ></span>
+              </label>
+            </div>
+            <div class="modal-form__row hidden" id="telegram-field">
+              <label class="ui-inputgroup">
+                <input
+                  type="text"
+                  name="telegram"
+                  class="ui-inputgroup__control js-input-classes"
+                />
+                <span class="ui-inputgroup__label"
+                  >Аккаунт пользователя Telegram, начинается с @<span
+                    class="ui-required-badge"
+                  ></span
+                ></span>
+              </label>
+            </div>
+            <div class="modal-form__row">
+              <label class="ui-inputgroup">
+                <textarea
+                  name="message"
+                  class="ui-inputgroup__control js-input-classes"
+                  rows="6"
+                ></textarea>
+                <span class="ui-inputgroup__label">Комментарий</span>
+              </label>
+            </div>
+            <div class="modal-form__row">
+              <label class="modal-form__approve">
+                <input
+                  type="checkbox"
+                  name="approve"
+                  value="1"
+                  checked
+                  required
+                />
+                <span>
+                  Нажимая кнопку «Отправить», я даю свое согласие на обработку
+                  моих персональных данных, в соответствии с Федеральным законом
+                  от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                  условиях и для целей, в соответствии с
+                  <a href="/policy" target="_blank">Условиями</a
+                  ><span class="ui-required-badge"></span>
+                </span>
+              </label>
+            </div>
+            <div class="modal-form__row">
+              <button
+                class="modal-form__submit ui-button-primary ui-button-primary_dark"
+                type="submit"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <button class="ui-scrollup" data-scroll></button>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+
+      <script
+        src="vendor/jquery.inputmask.bundle.min.js"
+        type="text/javascript"
+      ></script>
+      <script
+        src="vendor/jquery.inputmask-multi.min.js"
+        type="text/javascript"
+      ></script>
+
+      <script>
+        var inputmaskParams = {
+          phoneCodes: "vendor/phone-codes.json",
+        };
+      </script>
+
+      <link
+        rel="stylesheet"
+        href="https://master.avernus.ru/landing/Timer/flipdown.min.css"
+      />
+      <script src="https://master.avernus.ru/landing/Timer/flipdown.min.js"></script>
+      <script>
+        let date = new Date(Date.parse("2024-01-15T18:59:59.417+0300"));
+
+        new FlipDown(date.getTime() / 1000, {
+          headings: ["дней", "часов", "минут", "секунд"],
+          theme: "light",
+        }).start();
+      </script>
+
+      <!-- <script
+        type="text/javascript"
+        src="//avernus.ru/trade/LandingPage_Lib/TweenMax.min.js"
+      ></script>
+      <script src="vendor/polylines.js"></script> -->
+
+      <script src="dist/scripts/bundle.js"></script>
+    </div>
+  </body>
+</html>
